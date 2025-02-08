@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="vendorcss.css">
+</head>
+<body>
+    <header>
+        <h1>Vendor Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#manage-products">Manage Products</a></li>
+                <li><a href="#sales-history">Sales History</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="manage-products">
+        <h2>Manage Products</h2>
+        <input type="text" id="productTitle" placeholder="Product Title">
+        <input type="text" id="productDescription" placeholder="Description">
+        <input type="number" id="productPrice" placeholder="Price">
+        <input type="text" id="productCategory" placeholder="Category">
+        <input type="file" id="productImage">
+        <button onclick="addProduct()">Add Product</button>
+        <div id="productList"></div>
+    </section>
+    
+    <section id="sales-history">
+        <h2>Sales History</h2>
+        <div id="salesRecords">No sales recorded yet.</div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Vendor Portal. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
